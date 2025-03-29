@@ -1,0 +1,224 @@
+html {
+    scroll-behavior: smooth;
+}
+
+@font-face {
+    font-family: 'customfont';
+    src: url('BeautifulPeoplePersonalUse-dE0g.ttf') format('truetype');
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'customfont';
+    src: url('BeautifulPeoplePersonalUse-dE0g.ttf') format('truetype');
+    font-weight: bold;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'customfont';
+    src: url('BeautifulPeoplePersonalUse-dE0g.ttf') format('truetype');
+    font-weight: normal;
+    font-style: italic;
+}
+
+body {
+    font-family: 'customfont', sans-serif;
+    background-color: #ffffff;
+    cursor: url('cursor_black_big.png'), auto; /* Custom cursor everywhere */
+}
+
+a:hover {
+    cursor: url('cursor_black_big.png'), auto; /* Keeps custom cursor on all link hovers */
+}
+
+/* Reset default margins and padding */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* Hero Section */
+.hero {
+    height: 100vh;
+    background: #ffffff no-repeat center/cover;
+    position: relative;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    scroll-margin-top: 60px;
+    border-bottom: 1px dotted #b4b4b4;
+}
+
+.overlay {
+    text-align: center;
+    color: rgb(0, 0, 0);
+    /* background: linear-gradient(to bottom, rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.3)); */
+    padding: 2rem;
+    /* box-shadow: 0 0 20px rgba(255, 255, 255, 0.3); */
+    opacity: 0;
+    animation: fadeIn 1s ease-in-out 0.6s forwards;
+    /* text-shadow: 7px 7px 50px black; */
+}
+
+.overlay h1 {
+    font-size: 3rem;
+    font-family: 'customfont', sans-serif;
+    opacity: 0;
+    transform: translateY(20px);
+    animation: slideFade 1.5s ease-in-out 1s forwards;
+}
+
+.overlay p {
+    font-size: 1.5rem;
+    opacity: 0;
+    transform: translateY(20px);
+    animation: slideFade 1.5s ease-in-out 2.5s forwards;
+}
+
+.overlay .nav-link {
+    display: inline-block;
+    color: rgb(0, 0, 0);
+    text-decoration: none;
+    font-size: 1.2rem;
+    margin: 0 1rem;
+    opacity: 0;
+    transform: translateY(20px);
+}
+
+.overlay .nav-link:nth-child(3) {
+    animation: slideFade 1.5s ease-in-out 3s forwards; /* Home - 0.5s after p */
+}
+
+.overlay .nav-link:nth-child(4) {
+    animation: slideFade 1.5s ease-in-out 3.5s forwards; /* Showreel - 1s after p */
+}
+
+.overlay .nav-link:nth-child(5) {
+    animation: slideFade 1.5s ease-in-out 4s forwards; /* 3D Renders - 1.5s after p */
+}
+
+.overlay .nav-link:hover {
+    color: #ddd;
+}
+
+/* Animations */
+@keyframes fadeIn {
+    from {
+        opacity: 0;
+    }
+    to {
+        opacity: 1;
+    }
+}
+
+@keyframes slideFade {
+    from {
+        opacity: 0;
+        transform: translateY(20px);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+/* Showreel Section */
+#showreel {
+    padding: 4rem 2rem;
+    padding-top: 6rem;
+    text-align: center;
+    border-bottom: 1px solid #b4b4b4;
+}
+
+.showreel-container {
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+}
+
+.showreel-item {
+    width: 30%;
+    height: auto;
+    margin: 1rem 0;
+    object-fit: cover;
+    display: block;
+}
+
+.showreel-item::-webkit-media-controls {
+    opacity: 0;
+    transition: opacity 0.3s ease;
+}
+
+.showreel-item:hover::-webkit-media-controls {
+    opacity: 1;
+}
+
+/* Renders Section */
+#renders {
+    padding: 4rem 2rem;
+    padding-top: 6rem;
+    text-align: center;
+    border-bottom: 1px solid #b4b4b4;
+}
+
+.renders-container {
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+}
+
+.render-item {
+    width: 30%;
+    height: auto;
+    margin: 1rem 0;
+    object-fit: cover;
+    display: block;
+}
+
+/* Footer */
+footer {
+    background: #333;
+    color: white;
+    text-align: center;
+    padding: 2rem;
+    border-top: 1px solid #b4b4b4;
+}
+
+.social-links {
+    margin-top: 20px;
+}
+
+.social-links a {
+    color: white;
+    margin: 0 1rem;
+    text-decoration: none;
+    font-size: 1.5rem;
+    transition: color 0.3s ease;
+}
+
+.social-links a:hover {
+    color: #ddd;
+    animation: jump 0.3s ease-in-out;
+}
+
+@keyframes jump {
+    0% {
+        transform: translateY(0);
+    }
+    50% {
+        transform: translateY(-10px);
+    }
+    100% {
+        transform: translateY(0);
+    }
+}
+
+#showreel h2, #renders h2 {
+    font-size: 2rem;
+    margin-bottom: 2rem;
+    font-family: 'customfont', sans-serif;
+    color: #fff;
+}

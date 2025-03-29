@@ -1,0 +1,46 @@
+/* Tablets and smaller */
+@media (max-width: 768px) {
+    nav ul {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    nav ul li {
+        margin: 0.5rem 0;
+    }
+
+    .overlay h1 {
+        font-size: 2rem;
+    }
+
+    .overlay p {
+        font-size: 1rem;
+    }
+
+    .render-item {
+        width: 45%; /* 2-column layout for images */
+    }
+
+    .showreel-item {
+        width: 45%; /* 2-column layout for videos */
+    }
+}
+
+/* Phones */
+@media (max-width: 480px) {
+    .overlay h1 {
+        font-size: 1.5rem;
+    }
+
+    .overlay p {
+        font-size: 0.9rem;
+    }
+
+    .render-item {
+        width: 100%; /* 1-column layout for images */
+    }
+
+    .showreel-item {
+        width: 100%; /* 1-column layout for videos */
+    }
+}
