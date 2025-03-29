@@ -24,7 +24,8 @@ html {
 }
 
 body {
-    font-family: 'customfont', sans-serif;
+    /* font-family: 'customfont', sans-serif; */
+    font-family: "Dancing Script", cursive;
     background-color: #ffffff;
     cursor: url('cursor_black_big.png'), auto; /* Custom cursor everywhere */
 }
@@ -44,6 +45,7 @@ a:hover {
 .hero {
     height: 100vh;
     background: #ffffff no-repeat center/cover;
+    /* background: url('raid.png'); */
     position: relative;
     display: flex;
     align-items: center;
@@ -65,7 +67,8 @@ a:hover {
 
 .overlay h1 {
     font-size: 3rem;
-    font-family: 'customfont', sans-serif;
+    /* font-family: 'customfont', sans-serif; */
+    font-family: "Dancing Script", cursive;
     opacity: 0;
     transform: translateY(20px);
     animation: slideFade 1.5s ease-in-out 1s forwards;
@@ -76,6 +79,7 @@ a:hover {
     opacity: 0;
     transform: translateY(20px);
     animation: slideFade 1.5s ease-in-out 2.5s forwards;
+    font-family: "Dancing Script", cursive;
 }
 
 .overlay .nav-link {
@@ -86,6 +90,7 @@ a:hover {
     margin: 0 1rem;
     opacity: 0;
     transform: translateY(20px);
+    font-family: "Dancing Script", cursive;
 }
 
 .overlay .nav-link:nth-child(3) {
@@ -219,6 +224,7 @@ footer {
 #showreel h2, #renders h2 {
     font-size: 2rem;
     margin-bottom: 2rem;
-    font-family: 'customfont', sans-serif;
-    color: #fff;
+    /* font-family: 'customfont', sans-serif; */
+    font-family: "Dancing Script", cursive;
+    color: #000000;
 }
