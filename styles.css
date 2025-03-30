@@ -214,6 +214,11 @@ footer {
     animation: jump 0.3s ease-in-out;
 }
 
+.copyright {
+    margin-top: 1rem; /* Adds space between social links and copyright */
+    font-size: 0.9rem; /* Slightly smaller for subtlety */
+}
+
 @keyframes jump {
     0% {
         transform: translateY(0);
