@@ -28,12 +28,8 @@ body {
     /* font-family: 'customfont', sans-serif; */
     font-family: "Dancing Script", cursive;
     background-color: #ffffff;
-    cursor: url('cursor_black_big.png'), auto; /* Custom cursor everywhere */
 }
 
-a:hover {
-    cursor: url('cursor_black_big.png'), auto; /* Keeps custom cursor on all link hovers */
-}
 
 /* Reset default margins and padding */
 * {
@@ -95,7 +91,7 @@ a:hover {
 }
 
 .overlay .nav-link:nth-child(3) {
-    animation: slideFade 1.5s ease-in-out 3s forwards; /* Home - 0.5s after p */
+    animation: slideFade 1.5s ease-in-out 3s forwards; /* Social - 0.5s after p */
 }
 
 .overlay .nav-link:nth-child(4) {
@@ -104,6 +100,14 @@ a:hover {
 
 .overlay .nav-link:nth-child(5) {
     animation: slideFade 1.5s ease-in-out 4s forwards; /* 3D Renders - 1.5s after p */
+}
+
+.overlay .nav-link:nth-child(6) {
+    animation: slideFade 1.5s ease-in-out 4.5s forwards; /* About Me - 2s after p */
+}
+
+.overlay .nav-link:nth-child(7) {
+    animation: slideFade 1.5s ease-in-out 5s forwards; /* Contact - 2.5s after p */
 }
 
 .overlay .nav-link:hover {
